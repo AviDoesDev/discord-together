@@ -90,7 +90,7 @@ class DiscordTogether {
                             throw new Error('An error occured while retrieving data !');
                         };
                         returnData.code = `https://discord.com/invite/${invite.code}`
-                        returnData = Object.assign({}, returnData, invite);
+                        returnData = Object.assign({}, invite, returnData);
                     })
             } catch (err) {
                 throw new Error('An error occured while starting Youtube together !');
